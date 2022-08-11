@@ -1,12 +1,20 @@
 import React from "react";
-import { Card, TitleText } from "../../../../ui";
+import { Card, primaryColor, TitleText } from "../../../../ui";
 import BenefitTrack from "./BenefitTrack";
 
 const BenefitContent = () => {
   return (
     <>
       <Card>
-        <TitleText size="24px" lineheight="36px" heavy>
+        <TitleText
+          size="24px"
+          spacing="-0.03em"
+          lineheight="36px"
+          heavy
+          mdsize="14px"
+          mdlineheight="21px"
+          color={primaryColor}
+        >
           Track Business Expenses until its Milisecond
         </TitleText>
         <BenefitTrack />
