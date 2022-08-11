@@ -17,8 +17,8 @@ const BenefitTrack = () => {
             <Image
               width="20px"
               height="20px"
-              mdwidth="10px"
-              mdheight="10px"
+              mdwidth="15px"
+              mdheight="15px"
               mdmargin="2px 0 0"
               src="asset/check.png"
               alt="check"
@@ -26,9 +26,9 @@ const BenefitTrack = () => {
             <Text
               size="18px"
               lineheight="27px"
-              mdsize="10px"
+              mdsize="15px"
               mdpadding="0 30px 0 0"
-              mdlineheight="15px"
+              mdlineheight="25px"
               spacing="-0.02em"
             >
               {content}
