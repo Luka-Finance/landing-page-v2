@@ -11,7 +11,7 @@ const BenefitContent = () => {
           spacing="-0.03em"
           lineheight="36px"
           heavy
-          mdsize="14px"
+          mdsize="18px"
           mdlineheight="21px"
           color={primaryColor}
         >
