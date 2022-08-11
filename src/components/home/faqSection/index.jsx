@@ -9,7 +9,7 @@ const FaqSection = () => {
       <Card
         maxwidth="800px"
         width="100%"
-        mdwidth="90%"
+        mdwidth="88%"
         margin="150px auto 0"
         mdmargin="70px auto 0"
         display="block"
@@ -17,8 +17,8 @@ const FaqSection = () => {
         <TitleText
           size="50px"
           lineheight="68.2px"
-          mdsize="25px"
-          mdlineheight="35px"
+          mdsize="20px"
+          mdlineheight="30px"
           color={primaryColor}
           textalign="center"
           heavy
