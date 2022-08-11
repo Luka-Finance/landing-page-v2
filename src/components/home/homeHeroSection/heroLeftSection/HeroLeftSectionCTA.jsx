@@ -11,7 +11,7 @@ const HeroLeftSectionCTA = () => {
         mdwidth="300px"
         mdmargin="0 auto"
         mdflexdirection="column"
-        mdgap="40px"
+        mdgap="20px"
         alignitems="center"
       >
         <Button

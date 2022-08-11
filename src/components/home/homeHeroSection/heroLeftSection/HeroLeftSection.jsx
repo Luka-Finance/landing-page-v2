@@ -17,7 +17,7 @@ const HeroLeftSection = () => {
           heavy
           size="80px"
           lineheight="90px"
-          mdsize="30px"
+          mdsize="35px"
           mdlineheight="40px"
           mdtextalign="center"
           mdpadding="0 20px"
@@ -27,7 +27,7 @@ const HeroLeftSection = () => {
         <Image
           margin="-20px 0 0 0"
           width="100%"
-          mdwidth="50%"
+          mdwidth="70%"
           mdmargin="0 auto"
           src="asset/hero-hr.png"
           alt="hr"
@@ -36,8 +36,8 @@ const HeroLeftSection = () => {
           lineheight="30px"
           size="18px"
           mright="30px"
-          mdsize="16px"
-          mdlineheight="25px"
+          mdsize="18px"
+          mdlineheight="28px"
           mdtextalign="center"
           mdpadding="0 20px"
           mdmright="0"
