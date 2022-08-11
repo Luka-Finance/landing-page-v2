@@ -1,5 +1,5 @@
 import React from "react";
-import { accentColor, Card, Text, TitleText } from "../../../ui";
+import { accentColor, Card, primaryColor, Text, TitleText } from "../../../ui";
 import BenefitContent from "./benefitContent/BenefitContent";
 import BenefitCTA from "./BenefitCTA";
 import BenefitSwitch from "./BenefitSwitch";
@@ -10,7 +10,10 @@ const BenefitLeftSection = () => {
       <Card display="flex" flexdirection="column" gap="30px" flex="5">
         <Text
           size="20px"
+          mdsize="12px"
           lineheight="30px"
+          mdlineheight="18px"
+          mdtextalign="center"
           color={accentColor}
           margin="0 0 12px"
         >
@@ -18,11 +21,13 @@ const BenefitLeftSection = () => {
         </Text>
         <TitleText
           size="40px"
+          mdsize="20px"
           lineheight="60px"
+          mdlineheight="30px"
+          mdtextalign="center"
+          color={primaryColor}
           heavy
           mdpadding="0"
-          mdsize="25px"
-          mdlineheight="35px"
           mdmargin="0 0 30px"
         >
           What Benefits Will Employer Get
