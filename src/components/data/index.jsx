@@ -5,7 +5,7 @@ export const navs = [
   },
   {
     nav: "How it Works",
-    path: "/.",
+    path: "/login",
   },
   {
     nav: "Blog",
