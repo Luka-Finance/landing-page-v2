@@ -32,6 +32,7 @@ const FooterLinks = () => {
               color={whiteColor}
               heavy
               size="18px"
+              mdsize="15px"
               lineheight="24.55px"
             >
               {footer.headings}
@@ -40,6 +41,7 @@ const FooterLinks = () => {
               <LinkText
                 color={grayColor}
                 size="18px"
+                mdsize="15px"
                 to={footerMenu.path}
                 key={key}
                 display="block"
