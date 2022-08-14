@@ -11,7 +11,7 @@ import {
 const NewsLetter = () => {
   return (
     <>
-      <form>
+      <form style={{ width: "100%" }}>
         <Card
           width="410px"
           mdwidth="100%"
