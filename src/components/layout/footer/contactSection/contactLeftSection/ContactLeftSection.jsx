@@ -11,8 +11,8 @@ const ContactLeftSection = () => {
           lineheight="60.51px"
           color={whiteColor}
           heavy
-          mdsize="30px"
-          mdlineheight="40px"
+          mdsize="20px"
+          mdlineheight="30px"
         >
           Hear me out,
         </TitleText>
