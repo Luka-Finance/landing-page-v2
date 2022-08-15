@@ -6,13 +6,13 @@ import HomeHeroSection from "../components/home/homeHeroSection";
 import HowItWorks from "../components/home/howItWorks";
 import ProblemStatement from "../components/home/problemStatement";
 import Layout from "../components/layout";
-// import Background from "../components/ui/reusable/Background";
+import Background from "../components/ui/reusable/Background";
 
 const Homepage = () => {
   return (
     <>
       <Layout>
-        {/* <Background /> */}
+        <Background />
         <HomeHeroSection />
         <ProblemStatement />
         <Benefits />
