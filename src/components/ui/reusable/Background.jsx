@@ -11,7 +11,17 @@ const Background = () => {
       //   height="7464px"
       // overflowx="hidden"
     >
-      <Card width="100%" height="7464px" position="relative">
+      <Card
+        display="block"
+        maxwidth="1440px"
+        width="100%"
+        height="5000px"
+        top="0"
+        left="0"
+        position="absolute"
+        overflow="hidden"
+        // overflowy="hidden"
+      >
         <BlurredCircle
           top="-280px"
           left="-317px"
