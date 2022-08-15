@@ -51,7 +51,7 @@ const FinancialFreedomCards = () => {
             </Card>
             <TitleText
               size="30px"
-              mdsize="20px"
+              mdsize="18px"
               lineheight="30px"
               color={primaryColor}
               heavy

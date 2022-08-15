@@ -11,7 +11,7 @@ const HeroLeftSection = () => {
         display="flex"
         flexdirection="column"
         gap="50px"
-        mdgap="20px"
+        mdgap="30px"
       >
         <TitleText
           heavy
@@ -19,13 +19,16 @@ const HeroLeftSection = () => {
           lineheight="90px"
           mdsize="35px"
           mdlineheight="40px"
+          mdtextalign="center"
+          mdpadding="0 20px"
         >
           Financial Freedom for Employess
         </TitleText>
         <Image
           margin="-20px 0 0 0"
           width="100%"
-          mdmargin="0"
+          mdwidth="70%"
+          mdmargin="0 auto"
           src="asset/hero-hr.png"
           alt="hr"
         />
@@ -33,7 +36,10 @@ const HeroLeftSection = () => {
           lineheight="30px"
           size="18px"
           mright="30px"
-          mdsize="16px"
+          mdsize="18px"
+          mdlineheight="28px"
+          mdtextalign="center"
+          mdpadding="0 20px"
           mdmright="0"
           margin="0"
         >

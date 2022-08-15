@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { navs } from "../../data";
 import {
   accentColor,
   backgroundColor,
@@ -27,6 +28,7 @@ const InnerHeaders = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
+    width: 88%;
     i {
       display: block;
     }
@@ -40,6 +42,7 @@ const CTA = styled.div`
   justify-content: space-between;
 
   @media screen and (max-width: 1024px) {
+    display: none;
     position: fixed;
     top: 60px;
     background-color: ${backgroundColor};
@@ -73,24 +76,36 @@ const Header = () => {
   return (
     <>
       <MainSection
-        width="100vw"
+        display="block"
+        width="100%"
         top="0"
         left="0"
         position="fixed"
-        mddisplay="none"
         index="20"
-        bg={whiteColor}
+        bg="transparent"
       >
         {scrolled && (
           <Card
             width="100%"
             height="100%"
-            bg="transparent"
-            shadow="0 3px 20px rgb(179, 179, 179)"
+            bg={whiteColor}
+            shadow="0 0px 10px rgb(5, 45, 19, 0.5)"
             position="absolute"
             top="0"
             index="-1"
-          ></Card>
+          />
+        )}
+        {mobileMenu && (
+          <Card
+            display="none"
+            mddisplay="block"
+            width="100%"
+            height="100%"
+            bg={whiteColor}
+            position="absolute"
+            top="0"
+            index="-1"
+          />
         )}
         <InnerHeaders>
           <LinkText to="/">
@@ -107,6 +122,32 @@ const Header = () => {
             <HeaderCTA />
           </CTA>
         </InnerHeaders>
+        {mobileMenu && (
+          <Card
+            width="100%"
+            height="100%"
+            position="fixed"
+            display="none"
+            mddisplay="block"
+            bg={whiteColor}
+            top="0"
+            left="0"
+          >
+            <Card
+              width="88%"
+              margin="0 auto"
+              display="flex"
+              flexdirection="column"
+              gap="30px"
+            >
+              {navs.map((nav, key) => (
+                <LinkText mdsize="18px" to={nav.path} key={key}>
+                  {nav.nav}
+                </LinkText>
+              ))}
+            </Card>
+          </Card>
+        )}
       </MainSection>
     </>
   );

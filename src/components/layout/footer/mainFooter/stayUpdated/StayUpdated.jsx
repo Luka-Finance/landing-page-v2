@@ -11,7 +11,7 @@ const StayUpdated = () => {
         gap="30px"
         mdalignitems="center"
       >
-        <Image width="40%" src="asset/logo.png" alt="logo" />
+        <Image width="40%" mdwidth="30%" src="asset/logo.png" alt="logo" />
         <Text size="18px" mdsize="15px" lineheight="30px" color={grayColor}>
           Stay updated with our recent happenings.
         </Text>

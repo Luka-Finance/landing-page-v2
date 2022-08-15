@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
     list-style:none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Inter', sans-serif;
     background-color: white;

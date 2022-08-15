@@ -18,25 +18,27 @@ const HowItWorks = () => {
         width="100%"
         margin="150px auto 0"
         mdmargin="70px auto 0"
-        mdwidth="90%"
+        mdwidth="88%"
       >
         <TitleText
           color={primaryColor}
           size="50px"
           lineheight="73px"
           heavy
-          mdsize="25px"
-          mdlineheight="35px"
+          mdsize="20px"
+          mdlineheight="30px"
           textalign="center"
+          mdmargin="0 0 10px"
         >
           How it works
         </TitleText>
         <Text
           color={grayColor}
+          margin="10px 0 0"
           size="18px"
           lineheight="24.55px"
-          mdsize="15pxpx"
-          mdlineheight="22"
+          mdsize="15px"
+          mdlineheight="25px"
           textalign="center"
         >
           Easy steps to enjoy financial independence

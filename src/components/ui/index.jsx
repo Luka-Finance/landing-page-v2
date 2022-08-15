@@ -24,8 +24,8 @@ export const Card = styled.div`
   min-height: ${(props) => (props.minheight ? `${props.minheight}` : "unset")};
   border-radius: ${(props) => (props.radius ? `${props.radius}` : "0px")};
   border: ${(props) => (props.border ? `${props.border}` : "unset")};
-  border-top: ${(props) => (props.btop ? `${props.btop}` : "unset")};
-  border-bottom: ${(props) => (props.bbottom ? `${props.bbottom}` : "unset")};
+  border-top: ${(props) => props.btop && `${props.btop}`};
+  border-bottom: ${(props) => props.bbottom && `${props.bbottom}`};
   padding: ${(props) => (props.padding ? `${props.padding}` : "0px")};
   margin: ${(props) => (props.margin ? `${props.margin}` : "0px")};
   // padding-top: ${(props) => (props.ptop ? `${props.ptop}` : "0px")};
@@ -40,7 +40,7 @@ export const Card = styled.div`
   left: ${(props) => (props.left ? `${props.left}` : "unset")};
   right: ${(props) => (props.right ? `${props.right}` : "unset")};
   bottom: ${(props) => (props.bottom ? `${props.bottom}` : "unset")};
-  //   box-sizing: border-box;
+  box-sizing: border-box;
   height: ${(props) => (props.height ? `${props.height}` : "unset")};
   z-index: ${(props) => (props.index ? `${props.index}` : "unset")};
   display: ${(props) => (props.display ? `${props.display}` : "unset")};
@@ -96,6 +96,8 @@ export const Card = styled.div`
     display: ${(props) => props.mddisplay && `${props.mddisplay}`};
     visibility: ${(props) =>
       props.mvisibility ? `${props.mvisibility}` : "unset"};
+    min-height: ${(props) =>
+      props.mdminheight ? `${props.mdminheight}` : "unset"};
     grid-template-columns: ${(props) =>
       props.mdgridcolumn && `${props.mdgridcolumn}`};
     flex-direction: ${(props) =>
@@ -108,6 +110,7 @@ export const Card = styled.div`
     padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
     border-radius: ${(props) => props.mdradius && `${props.mdradius}`};
     align-items: ${(props) => props.mdalignitems && `${props.mdalignitems}`};
+    top: ${(props) => (props.mdtop ? `${props.mdtop}` : "unset")};
     justify-content: ${(props) =>
       props.mdjustifycontent && `${props.mdjustifycontent}`};
     // flex: unset;
@@ -146,6 +149,7 @@ export const Image = styled.img`
 
   @media screen and (max-width: 1024px) {
     width: ${(props) => props.mdwidth && `${props.mdwidth}`};
+    height: ${(props) => (props.mdheight ? `${props.mdheight}` : "unset")};
     margin: ${(props) => props.mdmargin && `${props.mdmargin}`};
   }
   @media screen and (max-width: 1024px) {
@@ -256,6 +260,10 @@ export const InputLabel = styled.label`
   padding-top: ${(props) => (props.ptop ? `${props.ptop}` : "0px")};
   padding-bottom: ${(props) => (props.pbottom ? `${props.pbottom}` : "0px")};
   dispaly: block;
+
+  @media screen and (max-width: 1024px) {
+    font-size: ${(props) => props.mdsize && `${props.mdsize}`};
+  }
 `;
 
 export const TextAreaField = styled("textarea")`
@@ -300,6 +308,7 @@ export const TextAreaField = styled("textarea")`
 
 export const Text = styled.p`
   font-size: ${(props) => (props.size ? `${props.size}` : "18px")};
+  letter-spacing: ${(props) => (props.spacing ? `${props.spacing}` : "unset")};
   font-weight: ${(props) => (props.heavy ? "700" : "500")};
   line-height: ${(props) => props.lineheight && `${props.lineheight}`};
   text-align: ${(props) => props.textalign && `${props.textalign}`};
@@ -322,6 +331,7 @@ export const Text = styled.p`
   border-radius: ${(props) => (props.radius ? `${props.radius}` : "0px")};
   margin: ${(props) => (props.margin ? `${props.margin}` : "0px")};
   padding: ${(props) => (props.padding ? `${props.padding}` : "0px")};
+  // flex: ${(props) => (props.flex ? `${props.flex}` : "unset")};
 
   &:hover {
     color: ${(props) =>
@@ -335,7 +345,9 @@ export const Text = styled.p`
     width: ${(props) => props.mdwidth && `${props.mdwidth}`};
     margin-right: ${(props) => props.mdmright && `${props.mdmright}`};
     margin: ${(props) => (props.mdmargin ? `${props.mdmargin}` : "0px")};
+    padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
     text-align: ${(props) => props.mdtextalign && `${props.mdtextalign}`};
+    line-height: ${(props) => props.mdlineheight && `${props.mdlineheight}`};
   }
   // @media screen and (max-width: 600px) {
   //   font-size: ${(props) => props.smsize && `${props.smsize}`};
@@ -344,6 +356,7 @@ export const Text = styled.p`
 
 export const TitleText = styled.h3`
   font-size: ${(props) => (props.size ? `${props.size}` : "20px")};
+  letter-spacing: ${(props) => (props.spacing ? `${props.spacing}` : "unset")};
   font-weight: ${(props) => (props.heavy ? "700" : "400")};
   text-align: ${(props) => props.textalign && props.textalign};
   line-height: ${(props) => props.lineheight && `${props.lineheight}`};
@@ -490,6 +503,10 @@ export const Circle = styled("div")`
   bottom: ${(props) => (props.bottom ? `${props.bottom}` : "unset")};
   filter: ${(props) => (props.filter ? `${props.filter}` : "unset")};
   z-index: ${(props) => (props.index ? `${props.index}` : "unset")};
+
+  @media screen and (max-width: 1024px) {
+    display: ${(props) => props.mddisplay && `${props.mddisplay}`};
+  }
 `;
 
 export const Button = styled("button")`
@@ -523,5 +540,8 @@ export const Button = styled("button")`
   @media screen and (max-width: 1024px) {
     padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
     display: ${(props) => props.mddisplay && `${props.mddisplay}`};
+    font-size: ${(props) => props.mdsize && `${props.mdsize}`};
+    line-height: ${(props) => props.mdlineheight && `${props.mdlineheight}`};
+    border-radius: ${(props) => props.mdradius && `${props.mdradius}`};
   }
 `;

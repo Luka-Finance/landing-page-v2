@@ -24,6 +24,7 @@ const MainFaq = () => {
         <Card key={key}>
           <Card
             display="flex"
+            mdgap="20px"
             alignitems="center"
             justifycontent="space-between"
             padding="20px 0"
@@ -32,7 +33,13 @@ const MainFaq = () => {
               clicked === key ? "3px solid rgba(205, 214, 218, 0.25)" : "unset"
             }
           >
-            <TitleText size="18px" lineheight="21.6px" heavy>
+            <TitleText
+              size="18px"
+              lineheight="21.6px"
+              mdsize="15px"
+              mdlineheight="25px"
+              heavy
+            >
               {faq.question}
             </TitleText>
             <Image
@@ -48,7 +55,9 @@ const MainFaq = () => {
             <Card>
               <Text
                 size="16px"
-                lineheight="22.4px"
+                mdsize="15px"
+                lineheight="25px"
+                mdlineheight="25px"
                 color="rgba(60, 60, 67, 0.85)"
                 padding="15px 25px"
               >

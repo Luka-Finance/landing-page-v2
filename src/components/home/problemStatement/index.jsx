@@ -1,5 +1,12 @@
 import React from "react";
-import { Card, grayColor, MainSection, Text, TitleText } from "../../ui";
+import {
+  Card,
+  grayColor,
+  MainSection,
+  primaryColor,
+  Text,
+  TitleText,
+} from "../../ui";
 
 const ProblemStatement = () => {
   return (
@@ -14,22 +21,30 @@ const ProblemStatement = () => {
           margin="0 auto"
           gap="63px"
           mdgap="30px"
-          mdwidth="90%"
+          mdwidth="88%"
         >
           <TitleText
             size="40px"
             lineheight="48.41px"
             textalign="center"
+            mdtextalign="center"
             heavy
+            color={primaryColor}
             padding="0 120px"
-            mdsize="25px"
+            mdsize="20px"
             mdpadding="0"
-            mdtextalign="left"
-            smlineheight="35px"
+            mdlineheight="30px"
           >
             More than 75% of employees run out of funds before the next payday
           </TitleText>
-          <Text size="20px" lineheight="30px" color={grayColor} mdsize="15px">
+          <Text
+            size="20px"
+            lineheight="30px"
+            color={grayColor}
+            mdsize="15px"
+            mdlineheight="25px"
+            mdtextalign="center"
+          >
             Save them from high interest loan sharks that send embarrasing
             messages to their families and friends.
           </Text>

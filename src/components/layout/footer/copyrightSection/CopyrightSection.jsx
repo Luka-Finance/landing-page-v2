@@ -13,6 +13,7 @@ const CopyrightSection = () => {
       >
         <Text
           size="18px"
+          mdsize="15px"
           lineheight="30px"
           color={whiteColor}
           mdtextalign="center"
@@ -28,6 +29,7 @@ const CopyrightSection = () => {
         >
           <LinkText
             size="18px"
+            mdsize="15px"
             lineheight="30px"
             color={whiteColor}
             width="fit-content"
@@ -37,6 +39,7 @@ const CopyrightSection = () => {
           </LinkText>
           <LinkText
             size="18px"
+            mdsize="15px"
             lineheight="30px"
             color={whiteColor}
             width="fit-content"

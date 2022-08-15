@@ -20,7 +20,12 @@ const ContactForm = () => {
           gap="10px"
           margin="40px 0 0"
         >
-          <InputLabel size="18px" color={whiteColor} htmlFor="email">
+          <InputLabel
+            size="18px"
+            mdsize="15px"
+            color={whiteColor}
+            htmlFor="email"
+          >
             Email
           </InputLabel>
           <TextField type="email" id="email" placeholder="Enter your Email" />
@@ -31,7 +36,12 @@ const ContactForm = () => {
           gap="10px"
           margin="20px 0 0"
         >
-          <InputLabel size="18px" color={whiteColor} htmlFor="message">
+          <InputLabel
+            size="18px"
+            color={whiteColor}
+            htmlFor="message"
+            mdsize="15px"
+          >
             Message
           </InputLabel>
           <TextAreaField
@@ -48,6 +58,7 @@ const ContactForm = () => {
           width="100%"
           padding="20px"
           size="16px"
+          mdsize="15px"
           color={whiteColor}
           bg={accentColor}
           mtop="20px"

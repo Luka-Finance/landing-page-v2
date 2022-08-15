@@ -9,10 +9,11 @@ const Benefits = () => {
       <MainSection mtop="100px" width="100%" display="block">
         <Card
           maxwidth="1180px"
+          display="block"
           width="100%"
           margin="0 auto"
-          mdwidth="90%"
-          display="block"
+          mdwidth="88%"
+          mdmargin="0 auto"
         >
           <Card>
             <Card

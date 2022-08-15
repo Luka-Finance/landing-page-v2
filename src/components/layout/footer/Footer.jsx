@@ -15,7 +15,7 @@ const Footer = () => {
           display="flex"
           flexdirection="column"
           gap="70px"
-          mdwidth="90%"
+          mdwidth="88%"
         >
           <ContactSection />
           <MainFooter />
