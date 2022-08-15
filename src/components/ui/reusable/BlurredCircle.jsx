@@ -5,6 +5,7 @@ const BlurredCircle = (props) => {
   const { top, left, color, index } = props;
   return (
     <Circle
+      mddisplay="none"
       bg={color}
       position="absolute"
       width="634px"
