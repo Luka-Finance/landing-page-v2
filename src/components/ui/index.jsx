@@ -213,14 +213,15 @@ export const Divider = styled("hr")`
 
 export const TextField = styled("input")`
   box-sizing: border-box;
-  border-radius: ${(props) => (props.radius ? props?.radius : "10px")};
+  border-radius: ${(props) => props.radius && props.radius};
   margin-left: ${(props) => (props.left ? `${props.left}` : "0px")};
   margin-right: ${(props) => (props.right ? `${props.right}` : "0px")};
+  flex: ${(props) => (props.flex ? `${props.flex}` : "unset")};
   margin-top: ${(props) => (props.top ? `${props.top}` : "0px")};
   margin-bottom: ${(props) => (props.bottom ? `${props.bottom}` : "0px")};
   border: ${(props) => (props.size ? `${props.size}` : "1px")} solid
     ${(props) => (props.border ? `${props.border}` : primaryColor)};
-  border: ${(props) => props.noBorder && "none"};
+  border: ${(props) => props.noborder && "none"};
   width: ${(props) => (props.width ? `${props.width}` : "100%")};
   height: ${(props) => (props.height ? `${props.height}` : "48px")};
   background: ${(props) => (props.bg ? `${props.bg}` : whiteColor)};
