@@ -3,11 +3,11 @@ import { Helmet } from "react-helmet";
 import { Card } from "../components/ui";
 import Background from "../components/ui/reusable/Background";
 
-const LoginPage = () => {
+const NotFoundPage = () => {
   return (
     <>
       <Helmet>
-        <title>Login || Luka finance</title>
+        <title>Not Found || Luka finance</title>
       </Helmet>
       <Card height="100vh" width="100%" position="fixed" overflowy="hidden">
         <Background />
@@ -20,11 +20,11 @@ const LoginPage = () => {
           justifycontent="center"
           overflowy="hidden"
         >
-          Login Page
+          Page Not Found
         </Card>
       </Card>
     </>
   );
 };
 
-export default LoginPage;
+export default NotFoundPage;
