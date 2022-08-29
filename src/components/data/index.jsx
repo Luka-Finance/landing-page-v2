@@ -5,19 +5,23 @@ export const navs = [
   },
   {
     nav: "How it Works",
-    path: "/login",
+    path: "#how-it-works",
+    inpage: "",
   },
   {
     nav: "Blog",
     path: "/blogs",
+    inpage: "1",
   },
   {
     nav: "FAQ",
-    path: "/.",
+    path: "#faq",
+    inpage: "",
   },
   {
     nav: "About Us",
-    path: "/.",
+    path: "#about-us",
+    inpage: "",
   },
 ];
 
