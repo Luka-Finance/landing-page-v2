@@ -11,7 +11,7 @@ import HowItWorksCard from "./howItWorksCard/HowItWorksCard";
 
 const HowItWorks = () => {
   return (
-    <MainSection width="100%">
+    <MainSection width="100%" id="how-it-works">
       <Card
         display="block"
         maxwidth="1180px"
