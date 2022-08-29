@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { navs } from "../../data";
+import { HashLink as Link } from "react-router-hash-link";
 import {
   accentColor,
   backgroundColor,
   Card,
+  grayColor,
   Image,
   LinkText,
   MainSection,
+  primaryColor,
   whiteColor,
 } from "../../ui";
 import HeaderCTA from "./HeaderCTA";
@@ -140,11 +143,48 @@ const Header = () => {
               flexdirection="column"
               gap="30px"
             >
-              {navs.map((nav, key) => (
-                <LinkText mdsize="18px" to={nav.path} key={key}>
-                  {nav.nav}
-                </LinkText>
+              {navs.map((nav, index) => (
+                <Card key={index}>
+                  {nav.inpage === "" ? (
+                    <>
+                      <Link
+                        style={{ fontSize: "18px", color: "black" }}
+                        mdsize="18px"
+                        to={nav.path}
+                        key={index}
+                        onClick={() => setMobileMenu(false)}
+                      >
+                        {nav.nav}
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <LinkText mdsize="18px" to={nav.path} key={index}>
+                        {nav.nav}
+                      </LinkText>
+                    </>
+                  )}
+                </Card>
               ))}
+
+              <LinkText
+                heavy
+                hcolor={primaryColor}
+                color={grayColor}
+                to="/login"
+              >
+                Login
+              </LinkText>
+              <LinkText
+                color={whiteColor}
+                bg={accentColor}
+                heavy
+                padding="10px"
+                radius="10px"
+                to="/signup"
+              >
+                Sign Up
+              </LinkText>
             </Card>
           </Card>
         )}
