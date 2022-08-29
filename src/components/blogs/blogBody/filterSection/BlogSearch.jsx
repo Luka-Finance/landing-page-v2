@@ -10,6 +10,7 @@ const BlogSearch = () => {
         alignitems="center"
         border={`1px solid ${grayColor}`}
         width="248px"
+        mdwidth="100%"
         radius="20px"
         padding="0 14px"
       >
