@@ -22,7 +22,7 @@ const HeroLeftSection = () => {
           mdtextalign="center"
           mdpadding="0 20px"
         >
-          Financial Freedom for Employess
+          Financial Freedom for Employees
         </TitleText>
         <Image
           margin="-20px 0 0 0"

@@ -25,6 +25,7 @@ const Blogs = () => {
         display="flex"
         flexdirection="column"
         gap="100px"
+        mdgap="50px"
       >
         {blogData.map((blog, key) => (
           <BlogSection {...blog} key={key} />

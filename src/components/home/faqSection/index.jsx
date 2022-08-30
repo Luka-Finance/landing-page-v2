@@ -5,7 +5,7 @@ import MainFaq from "./mainFaq/MainFaq";
 
 const FaqSection = () => {
   return (
-    <MainSection width="100%">
+    <MainSection width="100%" id="faq">
       <Card
         maxwidth="800px"
         width="100%"

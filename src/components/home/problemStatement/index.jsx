@@ -11,7 +11,7 @@ import {
 const ProblemStatement = () => {
   return (
     <>
-      <MainSection width="100%" mtop="242px" mdmtop="100px">
+      <MainSection width="100%" mtop="242px" mdmtop="100px" id="about-us">
         <Card
           maxwidth="1180px"
           width="100%"
