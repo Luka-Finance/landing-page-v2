@@ -1,10 +1,13 @@
 import React from "react";
+import { useContext } from "react";
+import { benefitContext } from "../../../helper/Context";
 import { accentColor, Card, primaryColor, Text, TitleText } from "../../../ui";
 import BenefitContent from "./benefitContent/BenefitContent";
 import BenefitCTA from "./BenefitCTA";
 import BenefitSwitch from "./BenefitSwitch";
 
 const BenefitLeftSection = () => {
+  const { isEmployee } = useContext(benefitContext);
   return (
     <>
       <Card
@@ -37,7 +40,9 @@ const BenefitLeftSection = () => {
             heavy
             mdpadding="0"
           >
-            What Benefits Will Employer Get
+            {isEmployee
+              ? "What Benefits Will Employee Get"
+              : "What Benefits Will Employer Get"}
           </TitleText>
         </Card>
         <BenefitSwitch />

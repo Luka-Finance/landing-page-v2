@@ -7,8 +7,8 @@ const MainFooter = () => {
   return (
     <>
       <Card display="flex" gap="150px" mdgap="50px" mdflexdirection="column">
-        <StayUpdated />
         <FooterLinks />
+        <StayUpdated />
       </Card>
     </>
   );

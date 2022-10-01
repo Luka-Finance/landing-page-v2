@@ -162,8 +162,10 @@ export const LinkText = styled(Link)`
   font-size: ${(props) => (props.size ? `${props.size}` : "20px")};
   font-style: ${(props) => (props.fontstyle ? `${props.fontstyle}` : "unset")};
   text-decoration: ${(props) =>
-    props.textdecoration ? `${props.textdecoration}` : "unset"};
+    props.decoration ? `${props.decoration}` : "unset"};
   display: ${(props) => props.display && `${props.display}`}
+  position: ${(props) => props.position && `${props.position}`}
+  right: ${(props) => props.right && `${props.right}`};
   font-weight: ${(props) => (props.heavy ? "600" : "400")};
   color: ${(props) => (props.color ? `${props.color}` : primaryColor)};
   background-color: ${(props) => (props.bg ? `${props.bg}` : "transparent")};
@@ -173,6 +175,9 @@ export const LinkText = styled(Link)`
   text-align: ${(props) => (props.align ? `${props.align}` : "left")};
   align-items: ${(props) =>
     props.alignitems ? `${props.alignitems}` : "unset"};
+  justify-content: ${(props) =>
+    props.justifycontent ? `${props.justifycontent}` : "unset"};
+  float: ${(props) => (props.float ? `${props.float}` : "unset")};
   padding: ${(props) => (props.padding ? `${props.padding}` : "0px")};
   margin: ${(props) => (props.margin ? `${props.margin}` : "0px")};
   // padding-top: ${(props) => (props.ptop ? `${props.ptop}` : "0px")};
@@ -222,6 +227,7 @@ export const TextField = styled("input")`
   border: ${(props) => (props.size ? `${props.size}` : "1px")} solid
     ${(props) => (props.border ? `${props.border}` : primaryColor)};
   border: ${(props) => props.noborder && "none"};
+  border-bottom: ${(props) => props.borderbottom && `${props.borderbottom}`};
   width: ${(props) => (props.width ? `${props.width}` : "100%")};
   height: ${(props) => (props.height ? `${props.height}` : "48px")};
   background: ${(props) => (props.bg ? `${props.bg}` : whiteColor)};
@@ -234,10 +240,13 @@ export const TextField = styled("input")`
   }
   padding: ${(props) => (props.padding ? `${props.padding}` : "16px 15px")};
   transition: 0.5s;
+  display: block;
 
   &:hover {
     border: ${(props) =>
       props.hborder ? `${props.hborder}` : "1px solid #03a63c"};
+    border-bottom: ${(props) =>
+      props.hborderbottom && `${props.hborderbottom}`};
   }
 
   width: ${(props) => props.lgWidth && `${props.lgWidth}`};

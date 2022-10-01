@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, MainSection, primaryColor } from "../../ui";
-import ContactSection from "./contactSection/ContactSection";
+// import ContactSection from "./contactSection/ContactSection";
 import MainFooter from "./mainFooter/MainFooter";
 import CopyrightSection from "./copyrightSection/CopyrightSection";
 
@@ -17,7 +17,7 @@ const Footer = () => {
           gap="70px"
           mdwidth="88%"
         >
-          <ContactSection />
+          {/* <ContactSection /> */}
           <MainFooter />
           <CopyrightSection />
         </Card>

@@ -14,9 +14,7 @@ const BenefitContent = () => {
           mdsize="18px"
           mdlineheight="21px"
           color={primaryColor}
-        >
-          Track Business Expenses until its Milisecond
-        </TitleText>
+        ></TitleText>
         <BenefitTrack />
       </Card>
     </>

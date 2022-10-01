@@ -1,33 +1,30 @@
 import React from "react";
-import { accentColor, Button, Card, Image, whiteColor } from "../../../ui";
+import { accentColor, Card, Text, whiteColor } from "../../../ui";
 
 const HeroLeftSectionCTA = () => {
   return (
     <>
       <Card
         display="flex"
-        width="400px"
-        gap="10px"
-        mdwidth="300px"
-        mdmargin="0 auto"
+        width="100%"
         mdflexdirection="column"
-        mdgap="20px"
-        alignitems="center"
+        mdalignitems="center"
       >
-        <Button
-          color={whiteColor}
-          bg={accentColor}
-          padding="20px 70px"
-          mdpadding="15px 56px"
-          radius="10px"
-          width="fit-content"
+        <a
+          href="https://forms.gle/ffU1sWCg9nhQXywy8"
+          style={{ textAlign: "center" }}
         >
-          Get Started
-        </Button>
-        <Button bg="transparent" display="flex" alignitems="center" gap="7px">
-          <Image width="20%" mdwidth="15%" src="asset/play.png" alt="play" />
-          View Demo
-        </Button>
+          <Text
+            color={whiteColor}
+            bg={accentColor}
+            padding="20px 70px"
+            mdpadding="15px 56px"
+            radius="10px"
+            width="fit-content"
+          >
+            Join Our Waitlist
+          </Text>
+        </a>
       </Card>
     </>
   );
