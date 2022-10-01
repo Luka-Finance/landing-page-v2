@@ -6,6 +6,7 @@ import {
   Homepage,
   LoginPage,
   NotFoundPage,
+  SetPasswordPage,
   SignupPage,
   SingleBlogPage,
 } from "./pages";
@@ -21,6 +22,7 @@ const AppRoutes = () => {
             <Route index element={<Homepage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignupPage />} />
+            <Route path="/setpassword" element={<SetPasswordPage />} />
             <Route path="/blogs" element={<BlogPage />} />
             <Route path="/blogs/:id" element={<SingleBlogPage />} />
             <Route path="*" element={<NotFoundPage />} />

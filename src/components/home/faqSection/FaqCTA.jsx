@@ -1,5 +1,5 @@
 import React from "react";
-import { accentColor, Card, LinkText, Text, whiteColor } from "../../ui";
+import { accentColor, Card, primaryColor, Text, whiteColor } from "../../ui";
 
 const FaqCTA = () => {
   return (
@@ -11,30 +11,39 @@ const FaqCTA = () => {
       gap="20px"
       alignitems="center"
     >
-      <LinkText
-        padding="25px"
-        width="647px"
-        mdwidth="unset"
-        display="block"
-        mdsize="15px"
-        bg={accentColor}
-        color={whiteColor}
-        radius="20px"
-        align="center"
-        to="/"
+      <a
+        href="https://forms.gle/ffU1sWCg9nhQXywy8"
+        style={{ textAlign: "center" }}
       >
-        Get started as an Employer
-      </LinkText>
+        <Text
+          padding="25px"
+          width="647px"
+          mdwidth="unset"
+          display="block"
+          mdsize="15px"
+          bg={accentColor}
+          color={whiteColor}
+          radius="20px"
+          align="center"
+        >
+          Join Our Waitlist
+        </Text>
+      </a>
       <Text textalign="center" mdsize="15px" padding="0 50px">
         Are you an employee?{" "}
-        <LinkText
-          fontstyle="italic"
-          textdecoration="underline"
-          mdsize="15px"
-          to="/"
+        <a
+          href="https://forms.gle/ffU1sWCg9nhQXywy8"
+          style={{ display: "inline-flex" }}
         >
-          Refer your employer here
-        </LinkText>
+          <Text
+            fontstyle="italic"
+            textdecoration="underline"
+            mdsize="15px"
+            color={primaryColor}
+          >
+            Refer your employer here
+          </Text>
+        </a>
       </Text>
     </Card>
   );
