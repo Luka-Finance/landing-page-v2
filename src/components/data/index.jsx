@@ -8,11 +8,11 @@ export const navs = [
     path: "#how-it-works",
     inpage: "",
   },
-  {
-    nav: "Blog",
-    path: "/blogs",
-    inpage: "1",
-  },
+  // {
+  //   nav: "Blog",
+  //   path: "/blogs",
+  //   inpage: "1",
+  // },
   {
     nav: "FAQ",
     path: "#faq",
@@ -25,72 +25,79 @@ export const navs = [
   },
 ];
 
-export const benefitContents = [
-  "Analyze your business cost easily with group transaction thorugh tagging feature.",
-  "Add more than one card for payment. Integrated with more than 50+ payment method and support bulk payment.",
-  "Arrange your business expenses by date, name, etc.,  with just one click.",
+export const employersBenefitContents = [
+  "Zero Setup Cost",
+  "Increase employees productivity.",
+  "Ensure employees maximum focus when financial distraction is removed.",
+  "Little or No changes to payroll system.",
+  "Helps you attract and retain the best of your talent.",
+];
+
+export const employeeBenefitContents = [
+  "Immediate access to earned income.",
+  "Instant transfers to bank accounts.",
+  "Access to a free debit card that works with zero worries about failed payment cards.",
+  "Instant access to income, minus the wait and bank fees.",
+  "Eliminate the need to borrow loans or pay loans with high interest rates.",
+  "Reduce financial wastage.",
 ];
 
 export const footerContent = [
   {
-    headings: "Support",
-    foooterMenus: [
-      {
-        name: "Help centre",
-        path: "/",
-      },
-      {
-        name: "Account information",
-        path: "/",
-      },
-      {
-        name: "About",
-        path: "/",
-      },
-      {
-        name: "Contact us",
-        path: "/",
-      },
-    ],
-  },
-  {
-    headings: "Help and solution",
-    foooterMenus: [
-      {
-        name: "Talk to support",
-        path: "/",
-      },
-      {
-        name: "Support docs",
-        path: "/",
-      },
-      {
-        name: "System status",
-        path: "/",
-      },
-      {
-        name: "Covid response",
-        path: "/",
-      },
-    ],
-  },
-  {
     headings: "Product",
     foooterMenus: [
       {
-        name: "Update",
+        name: "Employer Dashboard",
         path: "/",
       },
       {
-        name: "Security",
+        name: "Employee Mobile App",
         path: "/",
       },
       {
-        name: "Beta test",
+        name: "Financial Education",
         path: "/",
       },
       {
-        name: "Price product",
+        name: "How it Works",
+        path: "/",
+      },
+    ],
+  },
+  {
+    headings: "Company",
+    foooterMenus: [
+      {
+        name: "About Us",
+        path: "/",
+      },
+      {
+        name: "Blog",
+        path: "/",
+      },
+      {
+        name: "Contact Us",
+        path: "/",
+      },
+      {
+        name: "FAQ",
+        path: "/",
+      },
+    ],
+  },
+  {
+    headings: "Legal & Compliance",
+    foooterMenus: [
+      {
+        name: "Privacy Policy",
+        path: "/",
+      },
+      {
+        name: "Term of Use",
+        path: "/",
+      },
+      {
+        name: "Support",
         path: "/",
       },
     ],
@@ -124,39 +131,43 @@ export const financialFreedomContent = [
 
 export const FAQDetails = [
   {
-    question: "Where can I watch?",
+    question: "What is Luka Finance?",
     answer:
-      "Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore  ismod nulla. Elit adipiscing proin quis est consectetur. Felis ultricies nisi, quis malesuada sem odio. Potentiмnibh natoque amet amet, tincidunt ultricies et. Et nam rhoncus sit nullam diam tincidunt condimentum nullam.",
+      "Luka Finance is a fintech company that helps employers to offer financial wellness to their employees by giving them early access to their earned wages at no cost.",
   },
   {
-    question: "Tempus magna risus interdum ultricies sed urna?",
+    question: "Why Luka Finance?",
     answer:
-      "Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore  ismod nulla. Elit adipiscing proin quis est consectetur. Felis ultricies nisi, quis malesuada sem odio. Potentiмnibh natoque amet amet, tincidunt ultricies et. Et nam rhoncus sit nullam diam tincidunt condimentum nullam.",
+      "Luka Finance is a fintech company that helps employers to offer financial wellness to their employees by giving them early access to their earned wages at no cost.",
   },
   {
-    question: "Augue in nibh urna volutpat mattis?",
+    question: "What does earned minimum wage mean?",
     answer:
-      "Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore  ismod nulla. Elit adipiscing proin quis est consectetur. Felis ultricies nisi, quis malesuada sem odio. Potentiмnibh natoque amet amet, tincidunt ultricies et. Et nam rhoncus sit nullam diam tincidunt condimentum nullam.",
+      "Earned wage access (EWA) is a form of on-demand payment that allows  employees to access a portion of wages they've already earned ahead of their payday.",
   },
   {
-    question: "Eu egestas sed sed posuere ultrices ?",
+    question: "Is earned wage access a loan?",
     answer:
-      "Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore  ismod nulla. Elit adipiscing proin quis est consectetur. Felis ultricies nisi, quis malesuada sem odio. Potentiмnibh natoque amet amet, tincidunt ultricies et. Et nam rhoncus sit nullam diam tincidunt condimentum nullam.",
+      "Earned wage access is not a loan. It is income earned for every hour already worked.",
   },
   {
-    question: " Elementum facilisi aliquam, nisi, orci vulputate?",
+    question: "If I use Luka Finance, am I borrowing money?",
     answer:
-      "Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore  ismod nulla. Elit adipiscing proin quis est consectetur. Felis ultricies nisi, quis malesuada sem odio. Potentiмnibh natoque amet amet, tincidunt ultricies et. Et nam rhoncus sit nullam diam tincidunt condimentum nullam.",
+      "No, we built Luka Finance to provide access to wages you already earned, but that have not yet been paid to you.",
   },
   {
-    question: "Nibh at odio dolor etiam neque in vel id orci?",
-    answer:
-      "Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore  ismod nulla. Elit adipiscing proin quis est consectetur. Felis ultricies nisi, quis malesuada sem odio. Potentiмnibh natoque amet amet, tincidunt ultricies et. Et nam rhoncus sit nullam diam tincidunt condimentum nullam.",
+    question: "What is the duration of withdrawal?",
+    answer: "Withdrawal from your luka app to your bank account is instant.",
   },
   {
-    question: "Non dolor at velit lorem erat maecenas?",
+    question: "Can I withdraw my salary to my normal bank account?",
     answer:
-      "Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor ttitore  ismod nulla. Elit adipiscing proin quis est consectetur. Felis ultricies nisi, quis malesuada sem odio. Potentiмnibh natoque amet amet, tincidunt ultricies et. Et nam rhoncus sit nullam diam tincidunt condimentum nullam.",
+      "Yes you can. Luka finance allows you to withdraw 50% of your earned wage to your bank account if you want to.",
+  },
+  {
+    question: "If I access money from the Luka app, how do I pay back?",
+    answer:
+      "Earned wages accessed through the Luka app are deducted from your next pay by your employer and money remitted to Luka Finance. ",
   },
 ];
 
@@ -166,23 +177,44 @@ export const howItWorksDetails = [
     number: "1",
     details:
       "Employer register on the Luka Employer Portal online, submit KYC documents and upload employee details",
-    button: "Signup for free",
-    path: "/",
+    button: "Join Our Waitlist",
+    path: "https://forms.gle/ffU1sWCg9nhQXywy8",
   },
   {
     heading: "Employee Activation",
     number: "2",
     details:
-      "Employees download the Luka Mobile APP and activate their accout. Employees can now access their earned wage anytime, withdraw to their bank or pay for bills.",
+      "Employees download the Luka Mobile APP and activate their account. Employees can now access their earned wage anytime, withdraw to their bank or pay for bills.",
     button: "Download Luka App",
-    path: "/",
+    // path: "",
     diff: "",
   },
   {
     heading: "Employer Deduction",
     number: "3",
     details: "Employer deduct the amount withdrawn by the employee",
-    button: "Login Now",
-    path: "/",
+    button: "Join Our Waitlist",
+    path: "https://forms.gle/ffU1sWCg9nhQXywy8",
+  },
+];
+
+export const financialSolutionsDetails = [
+  {
+    heading: "Employer Dashboard",
+    number: "1",
+    details:
+      "Employers Register, onboard and manage all their employees Salary details through this dashboard",
+  },
+  {
+    heading: "Employee Mobile App",
+    number: "2",
+    details:
+      "Employees can easily access funds and perform transactions on the go from the mobile app",
+  },
+  {
+    heading: "Luka Debit Card",
+    number: "3",
+    details:
+      "Use our debit cards to pay for your bills and perform online transactions.",
   },
 ];

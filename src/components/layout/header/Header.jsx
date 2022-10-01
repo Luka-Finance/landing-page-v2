@@ -6,11 +6,10 @@ import {
   accentColor,
   backgroundColor,
   Card,
-  grayColor,
   Image,
   LinkText,
   MainSection,
-  primaryColor,
+  Text,
   whiteColor,
 } from "../../ui";
 import HeaderCTA from "./HeaderCTA";
@@ -167,24 +166,17 @@ const Header = () => {
                 </Card>
               ))}
 
-              <LinkText
-                heavy
-                hcolor={primaryColor}
-                color={grayColor}
-                to="/login"
-              >
-                Login
-              </LinkText>
-              <LinkText
-                color={whiteColor}
-                bg={accentColor}
-                heavy
-                padding="10px"
-                radius="10px"
-                to="/signup"
-              >
-                Sign Up
-              </LinkText>
+              <a href="https://forms.gle/ffU1sWCg9nhQXywy8">
+                <Text
+                  color={whiteColor}
+                  bg={accentColor}
+                  heavy
+                  padding="10px"
+                  radius="10px"
+                >
+                  Join Our Waitlist
+                </Text>
+              </a>
             </Card>
           </Card>
         )}

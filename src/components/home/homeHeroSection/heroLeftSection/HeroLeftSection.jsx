@@ -43,8 +43,10 @@ const HeroLeftSection = () => {
           mdmright="0"
           margin="0"
         >
-          Let's make your work more organize and easily using the Taskio
-          Dashboard with many of the latest features in managing work every day.
+          We are Introducing a new level of freedom for your employees. Luka
+          Finance allows you to get access to your earnings before payday,
+          enabling you to make split-second decisions on what to do with your
+          money
         </Text>
         <HeroLeftSectionCTA />
       </Card>
