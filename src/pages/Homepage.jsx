@@ -1,7 +1,8 @@
 import React from "react";
 import Benefits from "../components/home/benefits";
 import FaqSection from "../components/home/faqSection";
-import FinancialFreedomSection from "../components/home/financialFreedomSection";
+// import FinancialFreedomSection from "../components/home/financialFreedomSection";
+import FinancialSolutionSection from "../components/home/financialSolutionSection";
 import HomeHeroSection from "../components/home/homeHeroSection";
 import HowItWorks from "../components/home/howItWorks";
 import ProblemStatement from "../components/home/problemStatement";
@@ -18,7 +19,8 @@ const Homepage = () => {
         <Benefits />
         <HowItWorks />
         <FaqSection />
-        <FinancialFreedomSection />
+        {/* <FinancialFreedomSection /> */}
+        <FinancialSolutionSection />
       </Layout>
     </>
   );
