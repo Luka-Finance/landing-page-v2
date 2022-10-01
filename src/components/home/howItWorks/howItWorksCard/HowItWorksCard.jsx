@@ -3,7 +3,6 @@ import { howItWorksDetails } from "../../../data";
 import {
   accentColor,
   Card,
-  LinkText,
   primaryColor,
   Text,
   TitleText,
@@ -99,21 +98,23 @@ const HowItWorksCard = () => {
                 >
                   {item.details}
                 </Text>
-                <LinkText
-                  bg={item.diff === "" ? accentColor : whiteColor}
-                  radius="20px"
-                  height="fit-content"
-                  color={item.diff === "" ? whiteColor : accentColor}
-                  display="block"
-                  mdsize="15px"
-                  padding="17px"
-                  alignitems="flex-end"
-                  width="100%"
-                  align="center"
-                  to={item.path}
-                >
-                  {item.button}
-                </LinkText>
+                <a href={item.path} style={{ textAlign: "center" }}>
+                  <Text
+                    bg={item.diff === "" ? "#75AC8E" : whiteColor}
+                    radius="20px"
+                    disabled
+                    height="fit-content"
+                    color={item.diff === "" ? whiteColor : accentColor}
+                    display="block"
+                    mdsize="15px"
+                    padding="17px"
+                    alignitems="flex-end"
+                    width="100%"
+                    align="center"
+                  >
+                    {item.button}
+                  </Text>
+                </a>
               </Card>
             </Card>
           </Card>
