@@ -32,6 +32,7 @@ const MainFaq = () => {
             bbottom={
               clicked === key ? "3px solid rgba(205, 214, 218, 0.25)" : "unset"
             }
+            onClick={() => toggle(key)}
           >
             <TitleText
               size="18px"
