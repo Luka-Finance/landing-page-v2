@@ -14,7 +14,7 @@ const BenefitLeftSection = () => {
         display="flex"
         flexdirection="column"
         gap="30px"
-        mdgap="30px"
+        // mdgap="30px"
         flex="5"
       >
         <Card>
