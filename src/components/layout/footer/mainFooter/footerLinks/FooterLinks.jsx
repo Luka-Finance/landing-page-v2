@@ -15,7 +15,7 @@ const FooterLinks = () => {
         display="flex"
         width="100%"
         mdflexdirection="column"
-        mdalignitems="center"
+        // mdalignitems="center"
         justifycontent="space-between"
         mdgap="50px"
         flex="9"
@@ -26,7 +26,7 @@ const FooterLinks = () => {
             display="flex"
             flexdirection="column"
             gap="27px"
-            mdalignitems="center"
+            // mdalignitems="center"
           >
             <TitleText
               color={whiteColor}
