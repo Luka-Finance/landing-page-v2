@@ -13,6 +13,7 @@ const FinancialSolutionRightDiv = () => {
           margin="0 0 68px"
           mdmargin="0 0 30px"
           mdsize="20px"
+          mdtextalign="center"
         >
           See our solutions list
         </Text>
@@ -25,6 +26,7 @@ const FinancialSolutionRightDiv = () => {
               smgap="15px"
               key={index}
               width="100%"
+              mdalignitems="center"
             >
               <Card
                 bg={primaryColor}
@@ -48,10 +50,16 @@ const FinancialSolutionRightDiv = () => {
                 </TitleText>
               </Card>
               <Card display="flex" flexdirection="column" gap="20px">
-                <TitleText size="30px" smsize="18px" heavy>
+                <TitleText size="30px" smsize="18px" heavy mdtextalign="center">
                   {item.heading}
                 </TitleText>
-                <Text size="18px" color="#A6A6A6" smsize="15px" width="340px">
+                <Text
+                  size="18px"
+                  color="#A6A6A6"
+                  smsize="15px"
+                  width="340px"
+                  mdtextalign="center"
+                >
                   {item.details}
                 </Text>
               </Card>

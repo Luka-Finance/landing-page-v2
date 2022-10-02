@@ -9,7 +9,6 @@ const BenefitSwitch = () => {
       <Card
         width="358px"
         mdwidth="280px"
-        mdmargin="0 auto"
         height="56px"
         mdheight="40px"
         radius="30px"

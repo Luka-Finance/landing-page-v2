@@ -12,22 +12,16 @@ const FooterLinks = () => {
   return (
     <>
       <Card
+        style={{ flexWrap: "wrap" }}
         display="flex"
         width="100%"
-        mdflexdirection="column"
-        mdalignitems="center"
         justifycontent="space-between"
+        mdjustifycontent="unset"
         mdgap="50px"
         flex="9"
       >
         {footerContent.map((footer, key) => (
-          <Card
-            key={key}
-            display="flex"
-            flexdirection="column"
-            gap="27px"
-            mdalignitems="center"
-          >
+          <Card key={key} display="flex" flexdirection="column" gap="27px">
             <TitleText
               color={whiteColor}
               heavy
