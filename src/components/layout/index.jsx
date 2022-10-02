@@ -6,7 +6,7 @@ const Layout = (props) => {
   const { children } = props;
   return (
     <>
-      <MainSection width="100%" maxwidth="1440px">
+      <MainSection width="100%" maxwidth="100%">
         <Header />
         <Main>{children}</Main>
         <Footer />
