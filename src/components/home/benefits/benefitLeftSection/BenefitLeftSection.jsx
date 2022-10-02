@@ -23,7 +23,7 @@ const BenefitLeftSection = () => {
             mdsize="15px"
             lineheight="30px"
             mdlineheight="25px"
-            mdtextalign="center"
+            // mdtextalign="center"
             color={accentColor}
             margin="0 0 12px"
             mdmargin="0 0 15px"
@@ -35,7 +35,7 @@ const BenefitLeftSection = () => {
             mdsize="20px"
             lineheight="60px"
             mdlineheight="30px"
-            mdtextalign="center"
+            // mdtextalign="center"
             color={primaryColor}
             heavy
             mdpadding="0"
