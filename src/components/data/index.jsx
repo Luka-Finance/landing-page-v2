@@ -1,7 +1,7 @@
 export const navs = [
   {
     nav: "Home",
-    path: "/",
+    path: "#",
   },
   {
     nav: "How it Works",
