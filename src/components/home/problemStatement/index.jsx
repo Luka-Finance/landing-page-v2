@@ -24,8 +24,8 @@ const ProblemStatement = () => {
           mdwidth="88%"
         >
           <TitleText
-            size="40px"
-            lineheight="48.41px"
+            size="32px"
+            lineheight="40px"
             textalign="center"
             mdtextalign="center"
             heavy
