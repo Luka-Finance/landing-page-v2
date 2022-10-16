@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, MainSection, primaryColor, TitleText } from "../../ui";
-import FaqCTA from "./FaqCTA";
 import MainFaq from "./mainFaq/MainFaq";
 
 const FaqSection = () => {
@@ -15,8 +14,8 @@ const FaqSection = () => {
         display="block"
       >
         <TitleText
-          size="50px"
-          lineheight="68.2px"
+          size="32px"
+          lineheight="40px"
           mdsize="20px"
           mdlineheight="30px"
           color={primaryColor}
@@ -26,7 +25,6 @@ const FaqSection = () => {
           Frequently Asked Questions
         </TitleText>
         <MainFaq />
-        <FaqCTA />
       </Card>
     </MainSection>
   );
