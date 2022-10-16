@@ -6,7 +6,7 @@ const BenefitRightSection = () => {
   const { isEmployee } = useContext(benefitContext);
   return (
     <>
-      <Card flex="5" radius="0 0 30px 30px" overflow="hidden">
+      <Card flex="5" radius="0 100px" overflow="hidden">
         <Image
           width="100%"
           src={
