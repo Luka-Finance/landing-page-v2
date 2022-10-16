@@ -31,10 +31,12 @@ const BenefitLeftSection = () => {
             WHAT WILL YOU GET
           </Text>
           <TitleText
-            size="40px"
+            size="32px"
             mdsize="20px"
-            lineheight="60px"
+            lineheight="40px"
             mdlineheight="30px"
+            width="300px"
+            mdwidth="unset"
             // mdtextalign="center"
             color={primaryColor}
             heavy
@@ -47,7 +49,7 @@ const BenefitLeftSection = () => {
         </Card>
         <BenefitSwitch />
         <BenefitContent />
-        <BenefitCTA />
+        {/* <BenefitCTA /> */}
       </Card>
     </>
   );
