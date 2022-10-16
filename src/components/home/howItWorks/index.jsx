@@ -22,8 +22,8 @@ const HowItWorks = () => {
       >
         <TitleText
           color={primaryColor}
-          size="50px"
-          lineheight="73px"
+          size="32px"
+          lineheight="40px"
           heavy
           mdsize="20px"
           mdlineheight="30px"
