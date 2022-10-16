@@ -6,7 +6,7 @@ const HeroLeftSection = () => {
   return (
     <>
       <Card
-        flex="3"
+        flex="4"
         width="100%"
         display="flex"
         flexdirection="column"
@@ -15,8 +15,8 @@ const HeroLeftSection = () => {
       >
         <TitleText
           heavy
-          size="80px"
-          lineheight="90px"
+          size="64px"
+          lineheight="100px"
           mdsize="35px"
           mdlineheight="40px"
           mdtextalign="center"

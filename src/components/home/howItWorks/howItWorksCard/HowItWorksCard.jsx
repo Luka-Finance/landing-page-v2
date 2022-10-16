@@ -89,7 +89,7 @@ const HowItWorksCard = () => {
               >
                 <Text
                   textalign="center"
-                  size="20px"
+                  size="16px"
                   lineheight="30px"
                   mdsize="15px"
                   mdlineheight="25px"
@@ -98,7 +98,7 @@ const HowItWorksCard = () => {
                 >
                   {item.details}
                 </Text>
-                <a href={item.path} style={{ textAlign: "center" }}>
+                {/* <a href={item.path} style={{ textAlign: "center" }}>
                   <Text
                     bg={item.diff === "" ? "#75AC8E" : whiteColor}
                     radius="20px"
@@ -114,7 +114,7 @@ const HowItWorksCard = () => {
                   >
                     {item.button}
                   </Text>
-                </a>
+                </a> */}
               </Card>
             </Card>
           </Card>
