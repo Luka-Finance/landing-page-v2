@@ -171,7 +171,8 @@ const Header = () => {
                   color={whiteColor}
                   bg={accentColor}
                   heavy
-                  padding="10px"
+                  width="fit-content"
+                  padding="20px"
                   radius="10px"
                 >
                   Join Our Waitlist
