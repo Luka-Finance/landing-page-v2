@@ -14,12 +14,12 @@ const BenefitTrack = () => {
         margin="30px 0 0"
         display="flex"
         flexdirection="column"
-        gap="32px"
+        gap="14px"
         mdgap="10px"
       >
         {(isEmployee ? employeeBenefitContents : employersBenefitContents).map(
-          (content, key) => (
-            <Card display="flex" gap="14px" key={key} alignitem="flex-start">
+          (content, index) => (
+            <Card display="flex" gap="14px" key={index} alignitem="flex-start">
               <Image
                 width="20px"
                 height="20px"
@@ -30,7 +30,7 @@ const BenefitTrack = () => {
                 alt="check"
               />
               <Text
-                size="18px"
+                size="16px"
                 lineheight="27px"
                 mdsize="15px"
                 mdpadding="0 30px 0 0"
