@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, MainSection, primaryColor, TitleText } from "../../ui";
+import FaqCTA from "./FaqCTA";
 import FinancialSolutionCards from "./financialSolutionCards/FinancialSolutionCards";
 
 const FinancialSolutionSection = () => {
@@ -16,9 +17,9 @@ const FinancialSolutionSection = () => {
           mdwidth="90%"
         >
           <TitleText
-            size="50px"
+            size="32px"
             mdsize="20px"
-            lineheight="60px"
+            lineheight="40px"
             color={primaryColor}
             heavy
             textalign="center"
@@ -33,6 +34,7 @@ const FinancialSolutionSection = () => {
           </TitleText>
           <FinancialSolutionCards />
         </Card>
+        <FaqCTA />
       </MainSection>
     </>
   );
